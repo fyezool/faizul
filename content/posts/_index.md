@@ -1,6 +1,3 @@
 +++
-title = "Test"
-date = "2019-07-028"
+title = "Posts"
 +++
-
-## Just testing out my CI
