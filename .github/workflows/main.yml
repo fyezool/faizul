@@ -9,5 +9,6 @@ jobs:
         submodules: true
     - uses: ryank90/action-hugo-firebase-deploy@master
       with:
-        args: deploy --only hosting:faizul
+        args: deploy --add blog-91524 --only hosting:faizul  
         firebase-token: ${{ secrets.firebase_token }}
+        
