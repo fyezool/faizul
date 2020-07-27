@@ -9,4 +9,5 @@ jobs:
         submodules: true
     - uses: ryank90/action-hugo-firebase-deploy@master
       with:
+        args: deploy --only hosting:faizul
         firebase-token: ${{ secrets.firebase_token }}
