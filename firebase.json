@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "faizul",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
