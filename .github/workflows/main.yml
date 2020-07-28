@@ -1,5 +1,0 @@
-- name: Hugo build and Firebase Deploy
-  uses: pulimento/github-action-hugo-deploy-to-firebase@1.1.0
-  with:
-    # Firebase token (obtained via firebase tools -- firebase login:ci)
-    firebase-token: ${{ secrets.firebase_token }}
