@@ -29,7 +29,7 @@ Computer Science fresh grad certified in CompTIA Security+ and passionate in Inf
         <a href="{{ .Permalink }}" title="{{ .Title }}">
         {{ $image := .Page.Resources.GetMatch .Params.image }}
         {{ with $image }}
-            {{ $thumb := .Resize "400x" }}
+            {{ $thumb := .Resize "240x" }}
             <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
         {{end}}
         </a>

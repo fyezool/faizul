@@ -4,6 +4,5 @@ title = "About"
 +++
 
 
-## Who?
-
-Graduated Compouter Science student from UCTS
+Hi, im Faizul Hadiman.
+I just graduated from UCTS in Bachelor Computer Science and recently CompTIA Security+ certified. 
