@@ -1,9 +1,7 @@
 +++
 title = "Nebula - Exploit-exercise"
-date = "2020-07-28"
+date = "2020-08-14"
 +++
-
-# Exploit-exerise - Nebula
 
 Depress and isolating from other human person create a huge amount of free time for me to pursue further my passion in Cybersecurity. This time, i alocate some of it to write about my Exploit-Exercise whih you can found [here](https://exploit-exercises.lains.space/)
 
