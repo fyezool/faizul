@@ -16,7 +16,9 @@ Basically, exploit exercise have 3 main exercise which are Nebula, Protostar and
 First, lets login to the machine. Since i setup the lab on VMWare Workstation, i just put the machine behind NAT connection and scan the network using `netdiscover`. 
 
 ## Connect via ssh
-![43361a1d4008fab25182ed509f7fdc1f.png](deb9f10bc41343eb8579e82c14f50070.png)
+
+{{< image src="/img/deb9f10bc41343eb8579e82c14f50070.png" alt="ssh" position="center" style="border-radius: 8px;" >}}
+
 
 Login using `level00:level00` on ssh and we are in into the machine now.
 
@@ -31,11 +33,14 @@ Since the instruction needed us to execute this on behalf of `flag00`, here we j
 
 Now, this will create a pile of hateful output, we can filter this using `-print 2> /dev/null`. `/dev/null` is kinda black hole in Linux and redirect anything to it can create nice and neat filter. 
 
-![12b4d7f77a0728265b5e81aaef7bbfcc.png](30868d96f2f94e9186e5d754603b1945.png)
+
+{{< image src="/img/30868d96f2f94e9186e5d754603b1945.png" alt="payload" position="center" style="border-radius: 8px;" >}}
+
 
 Ok, we have found the binary, lets run it and get our flag shall we.
 
-![19d9c43b0a6b459bf064545cdb5ea0d3.png](6710313549ba4d07a1a929854c8d0ec2.png)
+{{< image src="/img/6710313549ba4d07a1a929854c8d0ec2.png" alt="payload" position="center" style="border-radius: 8px;" >}}
+
 
 We are already become user flag00 and lets just execute `getflag` to get the flag and move to next level. 
 
@@ -44,7 +49,9 @@ We are already become user flag00 and lets just execute `getflag` to get the fla
 
 we managed to exploit this and reach our target
 
-![2d8c0cc5e43ac2a6d36d08f4238fe43c.png](9bd023d676d549efb099c5ccf1a8e3f8.png)
+
+{{< image src="/img/9bd023d676d549efb099c5ccf1a8e3f8.png" alt="payload" position="center" style="border-radius: 8px;" >}}
+
 
 
 ## Conclusion
