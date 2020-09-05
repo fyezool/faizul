@@ -1,7 +1,7 @@
 ---
 author: "faizul"
 title: "Tenten - Retired HackTheBox Machine"
-date: 2020-12-16T12:00:06+09:00
+date: 2020-8-2T12:00:06+09:00
 description: "Tenten Machine Writeup"
 draft: false
 hideToc: false
@@ -13,7 +13,6 @@ tags:
 - pentest
 - retired
 - hackthebox
-
 ---
 
 ![17b23a928cae1763eeca5574a0c2efcf.png](/images/htb/tenten/7e7bc5f90e9447a1a18259fe404725dc.png)
