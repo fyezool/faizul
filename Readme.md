@@ -4,4 +4,4 @@ This new blog is using Hugo and Buddy CI for full DevOps lifecycle. This blog is
 
 # Lifecycle
 
-![lifecycle](/static/img/lifecycle.png)
+![lifecycle](static/images/lifecycle.png)

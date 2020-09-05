@@ -1,14 +1,136 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Tags on faizul</title>
-    <link>https://faizul.web.app/tags/</link>
-    <description>Recent content in Tags on faizul</description>
+    <title>Tags on Faizul</title>
+    <link>https://www.faizul.me/tags/</link>
+    <description>Recent content in Tags on Faizul</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <managingEditor>fyezool@gmail (faizul)</managingEditor>
+    <webMaster>fyezool@gmail (faizul)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 16 Dec 2020 12:00:06 +0900</lastBuildDate>
     
-	<atom:link href="https://faizul.web.app/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.faizul.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    
+
+      
+      <item>
+        <title>exploit-exercise</title>
+        <link>https://www.faizul.me/tags/exploit-exercise/</link>
+        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        
+        <guid>https://www.faizul.me/tags/exploit-exercise/</guid>
+        <description></description>
+        
+        <dc:creator>faizul</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>hackthebox</title>
+        <link>https://www.faizul.me/tags/hackthebox/</link>
+        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        
+        <guid>https://www.faizul.me/tags/hackthebox/</guid>
+        <description></description>
+        
+        <dc:creator>faizul</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>nebula</title>
+        <link>https://www.faizul.me/tags/nebula/</link>
+        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        
+        <guid>https://www.faizul.me/tags/nebula/</guid>
+        <description></description>
+        
+        <dc:creator>faizul</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>pentest</title>
+        <link>https://www.faizul.me/tags/pentest/</link>
+        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        
+        <guid>https://www.faizul.me/tags/pentest/</guid>
+        <description></description>
+        
+        <dc:creator>faizul</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>retired</title>
+        <link>https://www.faizul.me/tags/retired/</link>
+        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        
+        <guid>https://www.faizul.me/tags/retired/</guid>
+        <description></description>
+        
+        <dc:creator>faizul</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>index</title>
+        <link>https://www.faizul.me/tags/index/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        
+        <guid>https://www.faizul.me/tags/index/</guid>
+        <description></description>
+        
+        <dc:creator>faizul</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
     
   </channel>
 </rss>

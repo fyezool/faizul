@@ -1,34 +1,97 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Posts on faizul</title>
-    <link>https://faizul.web.app/posts/</link>
-    <description>Recent content in Posts on faizul</description>
+    <title>Posts on Faizul</title>
+    <link>https://www.faizul.me/posts/</link>
+    <description>Recent content in Posts on Faizul</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <managingEditor>fyezool@gmail (faizul)</managingEditor>
+    <webMaster>fyezool@gmail (faizul)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 16 Dec 2020 12:00:06 +0900</lastBuildDate>
     
-	<atom:link href="https://faizul.web.app/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.faizul.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>HackTheBox progress</title>
-      <link>https://faizul.web.app/posts/hackthebox/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+    
+
       
-      <guid>https://faizul.web.app/posts/hackthebox/</guid>
-      <description>I have been found HackTheBox name in few infosec channel on discord and some even use this for OSCP preparations. Things have not going well at for me so im using this opportunity to pursue my pentesting skill. So far, i have solve 5 box, 7 user and 5 root owned.
-All of the boxes are easy level, mixed between Windows and Linux machine.</description>
-    </item>
-    
-    <item>
-      <title>CompTIA Security&#43; certified</title>
-      <link>https://faizul.web.app/posts/comptia/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <item>
+        <title>Nebula level 00</title>
+        <link>https://www.faizul.me/posts/exploit-exercise/level-00/</link>
+        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        <atom:modified>Wed, 16 Dec 2020 12:00:06 +0900</atom:modified>
+        <guid>https://www.faizul.me/posts/exploit-exercise/level-00/</guid>
+        <description>Depress and isolating from other human person create a huge amount of free time for me to pursue further my passion in Cybersecurity. This time, i alocate some of it to write about my Exploit-Exercise whih you can found here
+Basically, exploit exercise have 3 main exercise which are Nebula, Protostar and Fusion. Nebula is focusing more on Privilege Escalation in Linux.
+Level 00 Questions Alternatively, look at the find man page.</description>
+        
+        <dc:creator>faizul</dc:creator>
+        <media:content url="https://www.faizul.me/images/nebula/deb9f10bc41343eb8579e82c14f50070.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>pentest</category>
+            
+          
+            
+              <category>nebula</category>
+            
+          
+            
+              <category>exploit-exercise</category>
+            
+          
+        
+        
+        
+      </item>
       
-      <guid>https://faizul.web.app/posts/comptia/</guid>
-      <description>Few month after training provided by Sarawak Government, i finally take my exam on the last day of the voucher vailidity. This would open up tons of new opportunity for me to enter IT field, at least in entry level. Next, i would go for OSCP to fulfill my pentesting aim.</description>
-    </item>
+      <item>
+        <title>Tenten - Retired HackTheBox Machine</title>
+        <link>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</link>
+        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        <atom:modified>Wed, 16 Dec 2020 12:00:06 +0900</atom:modified>
+        <guid>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</guid>
+        <description>10.10.10.10  Recon Nmap As usual, i will enum this machine with nmap first
+sudo nmap -sSCV -A --script vuln -T4 -oA nmap/agressive-vuln-scan -iL ip
+The summarized of the nmap scan is that only 2 port are available for attacking which are http 80 and 22 ssh. Once we went to the browser and visit the ip, we will b greeted by this wordpress site.
+Since it is a wordpress site, i will usually skip gobuster and nikto and straight to wpscan.</description>
+        
+        <dc:creator>faizul</dc:creator>
+        <media:content url="https://www.faizul.me/images/htb/htb.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>pentest</category>
+            
+          
+            
+              <category>retired</category>
+            
+          
+            
+              <category>hackthebox</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
     
   </channel>
 </rss>

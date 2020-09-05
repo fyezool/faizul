@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>retired on Faizul</title>
+    <link>https://www.faizul.me/tags/retired/</link>
+    <description>Recent content in retired on Faizul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>fyezool@gmail (faizul)</managingEditor>
+    <webMaster>fyezool@gmail (faizul)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 16 Dec 2020 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="https://www.faizul.me/tags/retired/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Tenten - Retired HackTheBox Machine</title>
+        <link>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</link>
+        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        <atom:modified>Wed, 16 Dec 2020 12:00:06 +0900</atom:modified>
+        <guid>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</guid>
+        <description>10.10.10.10  Recon Nmap As usual, i will enum this machine with nmap first
+sudo nmap -sSCV -A --script vuln -T4 -oA nmap/agressive-vuln-scan -iL ip
+The summarized of the nmap scan is that only 2 port are available for attacking which are http 80 and 22 ssh. Once we went to the browser and visit the ip, we will b greeted by this wordpress site.
+Since it is a wordpress site, i will usually skip gobuster and nikto and straight to wpscan.</description>
+        
+        <dc:creator>faizul</dc:creator>
+        <media:content url="https://www.faizul.me/images/htb/htb.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>pentest</category>
+            
+          
+            
+              <category>retired</category>
+            
+          
+            
+              <category>hackthebox</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

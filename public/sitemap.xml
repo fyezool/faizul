@@ -1,52 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    
-        
-        <url>
-            <loc>https://faizul.web.app/</loc>
-            <lastmod>2020-07-28T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>https://faizul.web.app/posts/hackthebox/</loc>
-            <lastmod>2020-07-28T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>https://faizul.web.app/posts/</loc>
-            <lastmod>2020-07-28T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>https://faizul.web.app/posts/comptia/</loc>
-            <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>https://faizul.web.app/about/</loc>
-            <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>https://faizul.web.app/categories/</loc>
-        </url>
-        
-    
-        
-        <url>
-            <loc>https://faizul.web.app/tags/</loc>
-        </url>
-        
-    
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.faizul.me/tags/exploit-exercise/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/tags/hackthebox/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/tags/nebula/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/posts/exploit-exercise/level-00/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/tags/pentest/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/posts/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/tags/retired/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/tags/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</loc>
+    <lastmod>2020-12-16T12:00:06+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/showcase/hugo/</loc>
+    <lastmod>2020-01-19T21:04:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/showcase/</loc>
+    <lastmod>2020-01-19T15:43:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/tags/index/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.faizul.me/series/</loc>
+  </url>
+  
 </urlset>
