@@ -1,8 +1,8 @@
 ---
 author: "faizul"
-title: "Tenten - Retired HackTheBox Machine"
+title: "brainfuck - Retired HackTheBox Machine"
 date: 2020-8-2T12:00:06+09:00
-description: "Tenten Machine Writeup"
+description: "brainfuck Machine Writeup"
 draft: false
 hideToc: false
 enableToc: true
@@ -15,7 +15,7 @@ tags:
 - hackthebox
 ---
 
-![17b23a928cae1763eeca5574a0c2efcf.png](/images/htb/tenten/7e7bc5f90e9447a1a18259fe404725dc.png)
+![17b23a928cae1763eeca5574a0c2efcf.png](/images/htb/brainfuck/7e7bc5f90e9447a1a18259fe404725dc.png)
 
 - 10.10.10.10
 
@@ -29,12 +29,12 @@ The summarized of the nmap scan is that only 2 port are available for attacking 
 
 
 
-![c45d509bdfdd6e2f9ba5f83a4212d1c2.png](/images/htb/tenten/eb93d6e89d9f4e22b15b8a9252bfaba0.png)
+![c45d509bdfdd6e2f9ba5f83a4212d1c2.png](/images/htb/brainfuck/eb93d6e89d9f4e22b15b8a9252bfaba0.png)
 
 
 
 
-![154334e4275823c5aa96689df238d163.png](/images/htb/tenten/1bfec60ceee04328861bf8c297f2c0b3.png)
+![154334e4275823c5aa96689df238d163.png](/images/htb/brainfuck/1bfec60ceee04328861bf8c297f2c0b3.png)
 
 
 Since it is a wordpress site, i will usually skip gobuster and nikto and straight to wpscan. 
@@ -97,20 +97,20 @@ Since we foun the job-manager plugin left unpatched, i manually crawl the web ap
 
 On the homepage, there is one hyperlink text to the open vacancies to the other page. 
 
-![e92bce2008715fea3846a0413adde0d6.png](/images/htb/tenten/6c436a5a17b34bf1b801972d27279989.png)
+![e92bce2008715fea3846a0413adde0d6.png](/images/htb/brainfuck/6c436a5a17b34bf1b801972d27279989.png)
 
 
 
-![5308310b72416302560f1c10d60001fe.png](/images/htb/tenten/7ec02b63ab9a49e49340787856d1f3a9.png)
+![5308310b72416302560f1c10d60001fe.png](/images/htb/brainfuck/7ec02b63ab9a49e49340787856d1f3a9.png)
 
 
 
 
-![715f13f47952aaa9511c6e873c978ffc.png](/images/htb/tenten/7ee3b4500f3244cb9adee73bd1ed9bda.png)
+![715f13f47952aaa9511c6e873c978ffc.png](/images/htb/brainfuck/7ee3b4500f3244cb9adee73bd1ed9bda.png)
 
 
 
-![0b174b03d41a15bdfc1f23deedc5a94a.png](/images/htb/tenten/985dd29d01134660b8de4087e3a76894.png)
+![0b174b03d41a15bdfc1f23deedc5a94a.png](/images/htb/brainfuck/985dd29d01134660b8de4087e3a76894.png)
 
 The Pentester job vacancy page have form which we can upload file and this can be leverage into RFI where we upload reverse shell payload on it. The form also can be tested for XSS and SQLi attack. 
 
@@ -122,13 +122,13 @@ when we change the url into other value, the post changes.
 
 
 
-![56c1c2fbf941e019cde7a4d192416971.png](/images/htb/tenten/d5b140bff94a47f789101e10bfecee66.png)
+![56c1c2fbf941e019cde7a4d192416971.png](/images/htb/brainfuck/d5b140bff94a47f789101e10bfecee66.png)
 
 For this one, we can get to dig more by writing simple bash script to do enumeration. 
 
 
 `curl -s http://10.10.10.10 | grep '<title>'`
-![7e0c2e64c955dce194b7599117dac885.png](/images/htb/tenten/1b85952ee60049db8e2f3d8c58fcdf35.png)
+![7e0c2e64c955dce194b7599117dac885.png](/images/htb/brainfuck/1b85952ee60049db8e2f3d8c58fcdf35.png)
 
 We turn this into loop and full bash script for enum.
 ```bash
@@ -142,7 +142,7 @@ do
 
 
 
-![56b8e5ec001774aa4c065eab7ccebadf.png](/images/htb/tenten/5f0ae6b790124a02973720584a58da22.png)
+![56b8e5ec001774aa4c065eab7ccebadf.png](/images/htb/brainfuck/5f0ae6b790124a02973720584a58da22.png)
 
 
 Now we have the list, we can create custom wordlist for bruteforcing to confirm the file on `wp-upload` dir. 
@@ -200,40 +200,40 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 Now, we going to see what is this cube and HackerAccessGranted file about. 
 
 cube
-![a29be2cf7a1ba6f2f6dd65986073a880.png](/images/htb/tenten/72f5e54e39ee4d94a2d632fcbe428e14.png)
+![a29be2cf7a1ba6f2f6dd65986073a880.png](/images/htb/brainfuck/72f5e54e39ee4d94a2d632fcbe428e14.png)
 
 
 HackerAccessGranted
-![a1c9a546372550b13b7b9e525bc23143.png](/images/htb/tenten/544557eb5d9e4b2a9385c498add2ab83.png)
+![a1c9a546372550b13b7b9e525bc23143.png](/images/htb/brainfuck/544557eb5d9e4b2a9385c498add2ab83.png)
 
 Download this and we going to dissect hidden strings or anything inside.
 
 Strings
-![fce9906e92357147af91281dd2b92fbd.png](/images/htb/tenten/8e3828eefdd748029169bccf6ed2145c.png)
+![fce9906e92357147af91281dd2b92fbd.png](/images/htb/brainfuck/8e3828eefdd748029169bccf6ed2145c.png)
 
 Since there is no hidden strings on the file, we should use another tools called steghide.
-![1c537743ff081b415c7a3c33f69dee4e.png](/images/htb/tenten/57394c3a342842cca6afee758fb5ce99.png)
+![1c537743ff081b415c7a3c33f69dee4e.png](/images/htb/brainfuck/57394c3a342842cca6afee758fb5ce99.png)
 
 
 Basically, the image contain hidden stego function of private key ssh to the victim machine. To crack the password, we can use ssh2john and crack it using JohnTheRipper.
 
 First , we change the current private key into john format
 `python /usr/share/john/ssh2john id_rsa > john-id_rsa`
-![cf136e9cd614018bb706e59a98357121.png](/images/htb/tenten/7e9290ae778b4b45b08a12dec2fdba43.png)
+![cf136e9cd614018bb706e59a98357121.png](/images/htb/brainfuck/7e9290ae778b4b45b08a12dec2fdba43.png)
 
 For future reference, the john format and normal private key format is different as shown below
-![971ea8ec0a5bc17145ef63ce9ade20b7.png](/images/htb/tenten/30b68c5f5000409ab155fe4c416c0913.png)
+![971ea8ec0a5bc17145ef63ce9ade20b7.png](/images/htb/brainfuck/30b68c5f5000409ab155fe4c416c0913.png)
 
 
 Then we can crack this using this command
 `sudo john john-id_rsa --fork=4 -w /usr/share/wordlist/rockyou.txt`
-![45094f3d4b785fd6ff1d865ddf6cbda0.png](/images/htb/tenten/f985fa777a6242f79eab24a75ad6bdad.png)
+![45094f3d4b785fd6ff1d865ddf6cbda0.png](/images/htb/brainfuck/f985fa777a6242f79eab24a75ad6bdad.png)
 We cracked the password, it is `superpassword`. 
 
 We now try to login using the private key and cracked password as enumerated user we done earlier. 
 
 `ssh -i id_rsa takis@10.10.10.10`
-![3ca38a94f47e7858b6084ffd7c8526c4.png](/images/htb/tenten/cd446387be58473582a654ac1442124c.png)
+![3ca38a94f47e7858b6084ffd7c8526c4.png](/images/htb/brainfuck/cd446387be58473582a654ac1442124c.png)
 
 We are in the system as user takis and got the user flag.
 
@@ -242,19 +242,19 @@ We are in the system as user takis and got the user flag.
 ## Privilege Escalation
 In order to root, we can check the permission or any special permission that user takis can do using `sudo -l`. 
 
-![d35c9dbefe0b59546af38dc304509939.png](/images/htb/tenten/b0e28942e3284c8cac3e57650124b444.png)
+![d35c9dbefe0b59546af38dc304509939.png](/images/htb/brainfuck/b0e28942e3284c8cac3e57650124b444.png)
 
 Basically, takis can run this special `/bin/fuckin` on ALL command without password. Let us see what this binary contain
 
 
-![f4949c387c7d3d35e8a4c5f87e97bfb8.png](/images/htb/tenten/6e5bd3f8bc994c05ae030d9eaa4956af.png)
+![f4949c387c7d3d35e8a4c5f87e97bfb8.png](/images/htb/brainfuck/6e5bd3f8bc994c05ae030d9eaa4956af.png)
 
 
 So, it can accept up to 4 arguments command. Lets try to run this as sudo and execute bash.
 
 `sudo /bin/fuckin bash`
 
-![0259c3437f454e327bb6db7cf4f07dfa.png](/images/htb/tenten/131ee3bab0654856840b2578f438b246.png)
+![0259c3437f454e327bb6db7cf4f07dfa.png](/images/htb/brainfuck/131ee3bab0654856840b2578f438b246.png)
 
 It works! We are now running as root. 
 
