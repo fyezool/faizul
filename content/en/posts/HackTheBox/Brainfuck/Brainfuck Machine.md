@@ -1,7 +1,7 @@
 ---
 author: "faizul"
 title: "Brainfuck - Retired HackTheBox Machine"
-date: 2020-8-1T12:00:06+09:00
+date: 2020-08-14T12:00:06+09:00
 description: "Brainfuck Machine Writeup"
 draft: false
 hideToc: false
@@ -15,7 +15,7 @@ tags:
 - hackthebox
 ---
 
-![f3228c6ac0dd58acfc3bc59941a9ed70.png](/images/htb/tenten/0083c016fd30415f850dad7d6176e812.png)
+![f3228c6ac0dd58acfc3bc59941a9ed70.png](/images/htb/brainfuck/0083c016fd30415f850dad7d6176e812.png)
 
 - 10.10.10.17
 
@@ -42,14 +42,14 @@ To summarized and beautify the nmap output, i filtered the output so that it is 
 ### Enumeration
 Browse www.brainfuck.htb and sup3rs3cr3t.brainfuck.htb and grab whatever we can to gain initial access.
 
-![1652f9e7c67c0d1ece156bb84040b371.png](/images/htb/tenten/948add39570044c4bc9b6a400cccc2e1.png)
+![1652f9e7c67c0d1ece156bb84040b371.png](/images/htb/brainfuck/948add39570044c4bc9b6a400cccc2e1.png)
 
 
-![e23b343b9a7b80d83c42971f36ab80fc.png](/images/htb/tenten/d122d2de84bb44d1b329dbe4ef9dce4e.png)
+![e23b343b9a7b80d83c42971f36ab80fc.png](/images/htb/brainfuck/d122d2de84bb44d1b329dbe4ef9dce4e.png)
 
 www.brainfuck.htb gave us hint that this web app is a Wordpress web app. Since this is HTTPS or 443, we can take a good look at certificate and inspect more. 
 
-![6a611376a1a9773247d874d313dfeaff.png](/images/htb/tenten/a745fb5f0682409c9ad285fef421688c.png)
+![6a611376a1a9773247d874d313dfeaff.png](/images/htb/brainfuck/a745fb5f0682409c9ad285fef421688c.png)
 
 
 
@@ -58,7 +58,7 @@ www.brainfuck.htb gave us hint that this web app is a Wordpress web app. Since t
 ### Searchsploit exploit
 Since the vulnerabilities that appears the most on wpscan result is `WP Support Plus Responsive Ticket System`, lets search this on searchsploit using this command. `searchsploit WP Support Plus Responsive Ticket System`
 
-![59edff135895c012783b45219b6c05e1.png](/images/htb/tenten/34b9c05a8e984f1da4296f2ae79e7bcc.png)
+![59edff135895c012783b45219b6c05e1.png](/images/htb/brainfuck/34b9c05a8e984f1da4296f2ae79e7bcc.png)
 
 Then, get this on local directory using `searchsploit -m 41006`. This will copy or mirror of 41006 exploit on local directory for our usage.
 
@@ -111,74 +111,74 @@ Next, we going to make new html file and use the code from searchsploit to login
 After that, open this on browser and we will get this kind of output.
 
 
-![6755bd752586505ae6f13aa524d14d7b.png](/images/htb/tenten/5e2c170cd21b4fd395da789474a2988e.png)
+![6755bd752586505ae6f13aa524d14d7b.png](/images/htb/brainfuck/5e2c170cd21b4fd395da789474a2988e.png)
 
 
 Press login and we will open the brainfuck.htb site with us logged in as admin. 
 
 
 
-![caf431667d5f651972e60fa3accf1564.png](/images/htb/tenten/32de80cdd62b4c97972ca95afe7889c7.png)
+![caf431667d5f651972e60fa3accf1564.png](/images/htb/brainfuck/32de80cdd62b4c97972ca95afe7889c7.png)
 
 Since we have SMTP, POP3 and IMAP, we going to find the setup on Wordpress plugin. Hover the cursor to Brainfuck Ltd and click theme. After that, click Plugins and we will find `Easy WP SMTP`
 
 
 
-![4ffca760db221ca0dbcfc1f3469afc21.png](/images/htb/tenten/515675597d84425baee7a5f8ccaf0139.png)
+![4ffca760db221ca0dbcfc1f3469afc21.png](/images/htb/brainfuck/515675597d84425baee7a5f8ccaf0139.png)
 
 
 There is a setup with password here. We can use inspect elements to get the password. 
 
 
 
-![6ff34be3530da115fb096509c105dfab.png](/images/htb/tenten/ce44d837b4e1484b824b5eadd629bcfc.png)
+![6ff34be3530da115fb096509c105dfab.png](/images/htb/brainfuck/ce44d837b4e1484b824b5eadd629bcfc.png)
 
 
 Next, we going to setup `orestis@brainfuck.htb` email on our mail client as follows. 
 
 
 
-![7e5d97cd3a746c81380ef234383fe386.png](/images/htb/tenten/03b321f1ab424dfb9c1df4b51d7c4d7d.png)
+![7e5d97cd3a746c81380ef234383fe386.png](/images/htb/brainfuck/03b321f1ab424dfb9c1df4b51d7c4d7d.png)
 
 
 
-![62e20e750cc1719da26c2155c15325ad.png](/images/htb/tenten/78305314e3164f2397fc6a7fcc925abb.png)
+![62e20e750cc1719da26c2155c15325ad.png](/images/htb/brainfuck/78305314e3164f2397fc6a7fcc925abb.png)
 
 
 
-![d9b570b04f75dddb6ef4e0427efaf3b4.png](/images/htb/tenten/7ec3a38ce14440f0bc90cc37f7aef755.png)
-
-
-
-
-![b73babcc201fa896e6438e66167378b7.png](/images/htb/tenten/1cd0b78dbb4a48ccbc20335b8a0db1a4.png)
-
-
-
-![4aa28097ee1d1527420100ef3e39d901.png](/images/htb/tenten/a3dd26a323324338ad9c13d0aa04b055.png)
+![d9b570b04f75dddb6ef4e0427efaf3b4.png](/images/htb/brainfuck/7ec3a38ce14440f0bc90cc37f7aef755.png)
 
 
 
 
-![f1e095202bc12a6e8ea05502ddf5a35a.png](/images/htb/tenten/c57d9c88f23f4d2e8e0a00a7f0e6074e.png)
+![b73babcc201fa896e6438e66167378b7.png](/images/htb/brainfuck/1cd0b78dbb4a48ccbc20335b8a0db1a4.png)
 
 
 
-![a211eb5757f808fbc7356b8adef21490.png](/images/htb/tenten/a0137d264c794178a03729619c6208ad.png)
+![4aa28097ee1d1527420100ef3e39d901.png](/images/htb/brainfuck/a3dd26a323324338ad9c13d0aa04b055.png)
+
+
+
+
+![f1e095202bc12a6e8ea05502ddf5a35a.png](/images/htb/brainfuck/c57d9c88f23f4d2e8e0a00a7f0e6074e.png)
+
+
+
+![a211eb5757f808fbc7356b8adef21490.png](/images/htb/brainfuck/a0137d264c794178a03729619c6208ad.png)
 
 
 Login to supers3cr3t forum and read all the gibberish talk between oretis and admin. 
 
-![d8df2797ed6b8f4ca8ebd660ebb73d25.png](/images/htb/tenten/a9d198ef62314ba5ab762b1c8f9448d2.png)
+![d8df2797ed6b8f4ca8ebd660ebb73d25.png](/images/htb/brainfuck/a9d198ef62314ba5ab762b1c8f9448d2.png)
 
 
 
-![27f1837dee5aba3031f4019d160882e2.png](/images/htb/tenten/f333dee5faa04e2e86bfd863db7bcfeb.png)
+![27f1837dee5aba3031f4019d160882e2.png](/images/htb/brainfuck/f333dee5faa04e2e86bfd863db7bcfeb.png)
 
 
 
 
-![5cc0b4122baec975f4ba1dd07b1a66fd.png](/images/htb/tenten/63d8f25065f347bcae1f7767b70ccdc2.png)
+![5cc0b4122baec975f4ba1dd07b1a66fd.png](/images/htb/brainfuck/63d8f25065f347bcae1f7767b70ccdc2.png)
 
 - Get key for decipher 
 	- compare clear text vs cipher text to get key
@@ -200,7 +200,7 @@ Login to supers3cr3t forum and read all the gibberish talk between oretis and ad
 - decrypt cipher with key on cryptii.com with `result` as passphrase
 
 
-![50a3e962f7c676c7fcbf9c0bac3295f3.png](/images/htb/tenten/eb9f543bc0db4c738bdfdb257bae3cbc.png)
+![50a3e962f7c676c7fcbf9c0bac3295f3.png](/images/htb/brainfuck/eb9f543bc0db4c738bdfdb257bae3cbc.png)
 
 ```
 There you go you stupid fuck, I hope you remember your key password because I dont :)
@@ -210,7 +210,7 @@ https://10.10.10.17/8ba5aa10e915218697d1c658cdee0bb8/orestis/id_rsa
 
 - Follow link and get ssh private key
 
-![7abbe1a0a9982539464420a587a7a09b.png](/images/htb/tenten/99cfc5a8817d46249aab22e46a0f6d6e.png)
+![7abbe1a0a9982539464420a587a7a09b.png](/images/htb/brainfuck/99cfc5a8817d46249aab22e46a0f6d6e.png)
 
 
 Encrypted sshkey. 
