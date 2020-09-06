@@ -13,6 +13,8 @@ tags:
 - pentest
 - retired
 - hackthebox
+categories:
+- writeup
 ---
 
 ![f3228c6ac0dd58acfc3bc59941a9ed70.png](/images/htb/brainfuck/0083c016fd30415f850dad7d6176e812.png)

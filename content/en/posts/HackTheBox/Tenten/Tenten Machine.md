@@ -13,6 +13,8 @@ tags:
 - pentest
 - retired
 - hackthebox
+categories:
+- writeup
 ---
 
 ![17b23a928cae1763eeca5574a0c2efcf.png](/images/htb/tenten/7e7bc5f90e9447a1a18259fe404725dc.png)
