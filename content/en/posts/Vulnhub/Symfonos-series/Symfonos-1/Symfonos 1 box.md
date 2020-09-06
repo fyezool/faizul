@@ -11,8 +11,8 @@ author: faizul
 image: images/vulnhub/vulnhub.png
 tags: 
 - pentest
-- retired
-- hackthebox
+- symfonos-series
+- vulnhub
 ---
 
 ![9df68848e0de9e3df9d10e5736d66431.png](/images/vulnhub/symfonos-1/fca4ff9ba3464c5994ebfd1045293025.png)
