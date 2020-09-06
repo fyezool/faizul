@@ -44,11 +44,117 @@
 
       
       <item>
+        <title>Remote - Retired HackTheBox Machine</title>
+        <link>https://www.faizul.me/posts/hackthebox/remote/remote-machine/</link>
+        <pubDate>Wed, 02 Sep 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        <atom:modified>Wed, 02 Sep 2020 12:00:06 +0900</atom:modified>
+        <guid>https://www.faizul.me/posts/hackthebox/remote/remote-machine/</guid>
+        <description>Remote Machine
+Remote Machine  ip 10.10.10.180  Nmap Scan 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33  21/tcp open ftp Microsoft ftpd |_ftp-anon: Anonymous FTP login allowed (FTP code 230) | ftp-syst: |_ SYST: Windows_NT 80/tcp open http Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP) |_http-title: Home - Acme Widgets 111/tcp open rpcbind 2-4 (RPC #100000) | rpcinfo: | program version port/proto service | 100000 2,3,4 111/tcp rpcbind | 100000 2,3,4 111/tcp6 rpcbind | 100000 2,3,4 111/udp rpcbind | 100000 2,3,4 111/udp6 rpcbind | 100003 2,3 2049/udp nfs | 100003 2,3 2049/udp6 nfs | 100003 2,3,4 2049/tcp nfs | 100003 2,3,4 2049/tcp6 nfs | 100005 1,2,3 2049/tcp mountd | 100005 1,2,3 2049/tcp6 mountd | 100005 1,2,3 2049/udp mountd | 100005 1,2,3 2049/udp6 mountd | 100021 1,2,3,4 2049/tcp nlockmgr | 100021 1,2,3,4 2049/tcp6 nlockmgr | 100021 1,2,3,4 2049/udp nlockmgr | 100021 1,2,3,4 2049/udp6 nlockmgr | 100024 1 2049/tcp status | 100024 1 2049/tcp6 status | 100024 1 2049/udp status |_ 100024 1 2049/udp6 status 135/tcp open msrpc Microsoft Windows RPC 139/tcp open netbios-ssn Microsoft Windows netbios-ssn 445/tcp open microsoft-ds?</description>
+        
+        <dc:creator>faizul</dc:creator>
+        <media:content url="https://www.faizul.me/images/htb/htb.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>pentest</category>
+            
+          
+            
+              <category>retired</category>
+            
+          
+            
+              <category>hackthebox</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Symfonos-1</title>
+        <link>https://www.faizul.me/posts/vulnhub/symfonos-series/symfonos-1/symfonos-1-box/</link>
+        <pubDate>Tue, 01 Sep 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        <atom:modified>Tue, 01 Sep 2020 12:00:06 +0900</atom:modified>
+        <guid>https://www.faizul.me/posts/vulnhub/symfonos-series/symfonos-1/symfonos-1-box/</guid>
+        <description>Lab setup
+VMWare setup with vmnet0 and Kali as attacker attached on vmnet0.
+  IP
+192.168.43.165
+  Recon This stage we get to know our victim. Doing engagement to know which port are opened, then enumerate the available port to recognize the attacking surface.
+nmap sudo nmap -sSCV -A --script vuln -oA nmap/full-agressive -iL ip
+ Opened port  22 25 80 139 445    gobuster gobuster dir -u http://192.</description>
+        
+        <dc:creator>faizul</dc:creator>
+        <media:content url="https://www.faizul.me/images/vulnhub/vulnhub.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>pentest</category>
+            
+          
+            
+              <category>retired</category>
+            
+          
+            
+              <category>hackthebox</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Tenten - Retired HackTheBox Machine</title>
+        <link>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</link>
+        <pubDate>Sat, 22 Aug 2020 12:00:06 +0900</pubDate>
+        <author>fyezool@gmail (faizul)</author>
+        <atom:modified>Sat, 22 Aug 2020 12:00:06 +0900</atom:modified>
+        <guid>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</guid>
+        <description>10.10.10.10  Recon Nmap As usual, i will enum this machine with nmap first
+sudo nmap -sSCV -A --script vuln -T4 -oA nmap/agressive-vuln-scan -iL ip
+The summarized of the nmap scan is that only 2 port are available for attacking which are http 80 and 22 ssh. Once we went to the browser and visit the ip, we will b greeted by this wordpress site.
+Since it is a wordpress site, i will usually skip gobuster and nikto and straight to wpscan.</description>
+        
+        <dc:creator>faizul</dc:creator>
+        <media:content url="https://www.faizul.me/images/htb/htb.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>pentest</category>
+            
+          
+            
+              <category>retired</category>
+            
+          
+            
+              <category>hackthebox</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
         <title>Nebula level 00</title>
         <link>https://www.faizul.me/posts/exploit-exercise/level-00/</link>
-        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <pubDate>Sun, 16 Aug 2020 12:00:06 +0900</pubDate>
         <author>fyezool@gmail (faizul)</author>
-        <atom:modified>Wed, 16 Dec 2020 12:00:06 +0900</atom:modified>
+        <atom:modified>Sun, 16 Aug 2020 12:00:06 +0900</atom:modified>
         <guid>https://www.faizul.me/posts/exploit-exercise/level-00/</guid>
         <description>Depress and isolating from other human person create a huge amount of free time for me to pursue further my passion in Cybersecurity. This time, i alocate some of it to write about my Exploit-Exercise whih you can found here
 Basically, exploit exercise have 3 main exercise which are Nebula, Protostar and Fusion. Nebula is focusing more on Privilege Escalation in Linux.
@@ -78,16 +184,14 @@ Level 00 Questions Alternatively, look at the find man page.</description>
       </item>
       
       <item>
-        <title>Tenten - Retired HackTheBox Machine</title>
-        <link>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</link>
-        <pubDate>Wed, 16 Dec 2020 12:00:06 +0900</pubDate>
+        <title>Brainfuck - Retired HackTheBox Machine</title>
+        <link>https://www.faizul.me/posts/hackthebox/brainfuck/brainfuck-machine/</link>
+        <pubDate>Fri, 14 Aug 2020 12:00:06 +0900</pubDate>
         <author>fyezool@gmail (faizul)</author>
-        <atom:modified>Wed, 16 Dec 2020 12:00:06 +0900</atom:modified>
-        <guid>https://www.faizul.me/posts/hackthebox/tenten/tenten-machine/</guid>
-        <description>10.10.10.10  Recon Nmap As usual, i will enum this machine with nmap first
-sudo nmap -sSCV -A --script vuln -T4 -oA nmap/agressive-vuln-scan -iL ip
-The summarized of the nmap scan is that only 2 port are available for attacking which are http 80 and 22 ssh. Once we went to the browser and visit the ip, we will b greeted by this wordpress site.
-Since it is a wordpress site, i will usually skip gobuster and nikto and straight to wpscan.</description>
+        <atom:modified>Fri, 14 Aug 2020 12:00:06 +0900</atom:modified>
+        <guid>https://www.faizul.me/posts/hackthebox/brainfuck/brainfuck-machine/</guid>
+        <description>10.10.10.17  Recon Nmap Start the nmap scan with sudo nmap -sCV -T4 -oA nmap/open-ports -iL ip. This will check the open ports on targeted
+Result discussions/note  22/tcp open ssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.1 (Ubuntu Linux; protocol 2.0) 25/tcp open smtp Postfix smtpd 110/tcp open pop3 Dovecot pop3d 143/tcp open imap Dovecot imapd 443/tcp open ssl/http nginx 1.10.0 (Ubuntu)  DNS:www.brainfuck.htb DNS:sup3rs3cr3t.brainfuck.htb DNS:brainfuck.htb    To summarized and beautify the nmap output, i filtered the output so that it is easier to analyze.</description>
         
         <dc:creator>faizul</dc:creator>
         <media:content url="https://www.faizul.me/images/htb/htb.png" medium="image"><media:title type="html">featured image</media:title></media:content>
