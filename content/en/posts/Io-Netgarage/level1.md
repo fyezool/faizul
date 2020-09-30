@@ -7,7 +7,7 @@ draft: false
 hideToc: false
 enableToc: true
 enableTocContent: false
-image: images/protostar/protostar.jpeg
+image: images/io-netgarage/io-netgarage.png
 tags: 
 - reverse-engineering
 - io-netgarage
