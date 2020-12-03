@@ -8,7 +8,7 @@ hideToc: false
 enableToc: true
 enableTocContent: false
 author: faizul
-image: images/adventofctf/adventofctf.jpg
+image: images/adventofctf/adventofctf.png
 tags: 
 - adventofctf
 - ctf
